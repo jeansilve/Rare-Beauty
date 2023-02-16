@@ -1,0 +1,573 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Rare Beauty</title>
+    <style>
+      body {
+        background-color: rgb(253, 246, 240);
+        margin: 0%;
+      }
+      header {
+        color: rgb(122, 0, 54);
+        padding: 40px;
+        text-align: center;
+        font-size: 40px;
+      }
+      .topnav {
+        overflow: hidden;
+      }
+      .topnav a {
+        float: left;
+        display: block;
+        color: rgb(122, 0, 54);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color: rgb(253, 246, 240);
+        font-size: 20px;
+      }
+      .topnav a:hover {
+        color: rgb(122, 0, 54);
+        cursor: pointer;
+        text-decoration-line: underline;
+      }
+      .mySlides {
+        display: block;
+        text-align: center;
+        border-radius: 70px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        padding: 20px;
+        font-family: cursive;
+      }
+      h2 {
+        font-family: sans-serif;
+        line-height: 2;
+        padding: 10px;
+        background-color: rgb(247, 239, 242);
+      }
+      h3 {
+        font-family: sans-serif;
+        color: rgb(122, 0, 54);
+        text-align: center;
+      }
+      h4 {
+        color: rgb(122, 0, 54);
+        font-family: sans-serif;
+        text-align: center;
+      }
+      h5 {
+        font-family: cursive;
+        font-size: 2em;
+      }
+      h6 {
+        font-family: cursive;
+        font-size: 2em;
+        text-align: center;
+      }
+      h7 {
+        font-family: cursive;
+        font-size: 2em;
+        color: rgb(122, 0, 54);
+      }
+      p {
+        font-size: 25px;
+      }
+      .facts {
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+      }
+      .answers {
+        font-family: sans-serif;
+        text-align: center;
+      }
+      .donate {
+        display: block;
+        margin: 0 auto;
+        background-color: rgb(0, 9, 20);
+        font-family: cursive;
+        padding: 20px;
+        color: white;
+        font-size: 18px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+      }
+      .selena {
+        border-radius: 50%;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .row img {
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 10px solid rgb(122, 0, 54);
+        border-radius: 20px;
+      }
+      .collection {
+        display: flex;
+        justify-content: center;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .collection img {
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 10px solid rgb(247, 216, 190);
+        border-radius: 20px;
+      }
+      .image {
+        padding: 5px;
+        margin: 5px;
+      }
+      div.gallery {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(247, 239, 242);
+      }
+      div.gallery img {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      fund {
+        font-size: 25px;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      .environment {
+        text-align: center;
+        color: rgb(122, 0, 54);
+        font-size: xx-large;
+        font-family: cursive;
+      }
+      .impact {
+        font-family: sans-serif;
+        line-height: 2;
+        text-align: center;
+      }
+      .footnote {
+        text-align: center;
+        color: rgb(122, 0, 54);
+        font-size: 20px;
+      }
+      .rights {
+        text-align: center;
+        color: rgb(122, 0, 54);
+        font-size: 20px;
+      }
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        background: rgb(122, 0, 54);
+        color: white;
+      }
+      .fa-twitter {
+        background: rgb(122, 0, 54);
+        color: white;
+      }
+      .fa-instagram {
+        background: rgb(122, 0, 54);
+        color: white;
+      }
+      .shiny {
+        text-align: center;
+        background-color: rgb(122, 0, 54);
+        border-color: white;
+      }
+      form {
+        border: 2px solid rgb(253, 246, 240);
+        text-align: center;
+        background-color: rgb(253, 246, 240);
+      }
+      .container img {
+        padding: 20px;
+        background-color: rgb(253, 246, 240);
+        border-radius: 50px;
+      }
+      input[type="text"],
+      input[type="submit"] {
+        width: 30%;
+        padding: 12px;
+        margin: 4px 0;
+        display: inline-block;
+        border: 1px solid;
+        box-sizing: border-box;
+        background-color: rgb(247, 239, 242);
+        color: rgb(122, 0, 54);
+      }
+      input[type="checkbox"] {
+        margin-top: 8px;
+      }
+      input[type="submit"] {
+        background-color: rgb(122, 0, 54);
+        color: rgb(247, 239, 242);
+        border: none;
+      }
+      input[type="submit"]:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/591/original/EST_WEBSITE_Case-Study_Rare-Beauty-3.jpg?1675892808"
+        style="float: left"
+        width="70px"
+      />
+      <a href="#about-us" class="About-Us">About Us</a>
+      <a href="#shop" class="Shop">Shop</a>
+      <a href="#Environmental" class="Environmental">Environmental Impact</a>
+      <a href="#rare-impact-fund" class="rare-impact-fund">Rare Impact Fund</a>
+    </div>
+    <b><header>Rare Beauty</header></b>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="photoshoot" style="max-width: 300%">
+      <img
+        class="mySlides"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/254/original/Copy-of-Copy-of-Untitled-Design-1.png?1675747972"
+        style="width: 50%"
+      />
+      <img
+        class="mySlides"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/268/original/Sephora-Hong-Kong_Rare-Beauty_Selena-Gomez-11-1800x1350.jpg?1675748345"
+        style="width: 50%"
+      />
+      <img
+        class="mySlides"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/265/original/Screen-Shot-2020-09-02-at-11.27.37-PM.png?1675748117"
+        style="width: 50%"
+      />
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 id="about-us">What makes us Rare</h1>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/248/original/Sephora-Hong-Kong_Rare-Beauty_Selena-Gomez-15-960x1280.jpg?1675738055"
+      alt="Selena Gomez"
+      width="300"
+      style="float: left; margin-right: 25px; border-radius: 40px"
+    />
+    <h2>
+      Together we're building a safe, welcoming space in beauty and beyond.
+      Beauty is breaking down unrealistic standards of perfection. This is
+      makeup made to feel good in, without hiding what makes you unique—because
+      Rare Beauty is not about being someone else, but being who you are. And
+      it's all vegan and cruelty free. We are on a mission to help everyone
+      celebrate their individuality by redefining what beautiful means. We want
+      to promote self-acceptance and give people the tools they need to feel
+      less alone in the world. Our vision is to create a safe, welcoming space
+      in beauty—and beyond—that supports mental well-being across age, gender
+      identity, sexual orientation, race, cultural background, physical or
+      mental ability, and perspective.
+    </h2>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h3>Founder Quote</h3>
+    <p style="text-align: center">
+      “Being <b><em>rare</em></b> is about being comfortable with yourself. I’ve
+      stopped trying to be perfect. I just want to be me.”
+    </p>
+    <h4>Selena Gomez</h4>
+    <br />
+    <br />
+    <div class="shiny">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/608/original/https___hypebeast.com_wp-content_blogs.dir_6_files_2020_10_rare-beauty-by-selena-gomez-magnetic-spirit-confident-energy-eyeshadow-palette-makeup-price-where-to-buy-0.jpg?1675916742"
+        alt="Shiny makeup"
+        width="700"
+        style="border-radius: 50%"
+      />
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h5 id="shop">Shop by Category</h5>
+    <div class="row">
+      <a href="https://www.rarebeauty.com/collections/lip"
+        ><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/565/original/FV89A-KXgAQOV_H_%281%29.jpg?1675886747"
+          alt="Selena Gomez putting on lipstick"
+          width="300"
+      /></a>
+      <a href="https://www.rarebeauty.com/collections/face"
+        ><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/267/original/selena-gomez-rare-beauty-spring-2022-campaign1-1-1638970706.jpg?1675748321"
+          alt="Selena Gomez putting on blush"
+          width="300"
+      /></a>
+      <a href="https://www.rarebeauty.com/collections/eye"
+        ><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/262/original/RareBeauty-2f84d8e841214d8bae50fc71f10bc93b.png?1675748075"
+          alt="Selena Gomez putting on eyeshadow"
+          width="300"
+      /></a>
+    </div>
+    <br />
+    <br />
+    <div class="collection">
+      <a href="https://www.rarebeauty.com/collections/shop-all"
+        ><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/754/original/EhAUE6CWkAA5a8z.jpg?1676012481"
+          alt="Sephora stand"
+          width="500"
+      /></a>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p class="environment" id="Environmental"><b>Environmental Impact</b></p>
+    <p class="impact">
+      Our 100% recyclable boxes are made from responsibly sourced, FSC-certified
+      materials, and printed with water-based ink. All of our formula suppliers
+      are audited to make sure they meet the stringent international regulatory
+      standards for Cosmetic Good Manufacturing Practices, including ISO 22716.
+      GMP guidlines are designed to help ensure product safety, quality, and
+      consistency through production, control, storage, and shipment.
+    </p>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/725/original/rare_beauty_pr_package_1631832627_196d12ee_progressive.jpg?1675984977"
+      alt="Rare Beauty Box"
+      width="600"
+      height="500"
+      style="border-radius: 50%"
+    />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/724/original/Rare_Beauty_%288%29.jpg?1675984963"
+      alt="Product boxes"
+      width="600"
+      height="500"
+      style="border-radius: 50%; float: right"
+    />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="gallery">
+      <a
+        target="_blank"
+        href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/257/original/20221220_152211_0000-760x510_2x.png?1675748012"
+      >
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/257/original/20221220_152211_0000-760x510_2x.png?1675748012"
+          alt="Highlighter"
+          width="600"
+          height="400"
+        />
+      </a>
+    </div>
+    <div class="gallery">
+      <a
+        target="_blank"
+        href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/261/original/ESTABLISHED-Rare_Beauty-FOUNDATION-1.jpg?1675748059"
+      >
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/261/original/ESTABLISHED-Rare_Beauty-FOUNDATION-1.jpg?1675748059"
+          alt="Foundation"
+          width="600"
+          height="400"
+        />
+      </a>
+    </div>
+    <div class="gallery">
+      <a
+        target="_blank"
+        href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/256/original/60578-media_4.jpg?1675747998"
+      >
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/256/original/60578-media_4.jpg?1675747998"
+          alt="blush"
+          width="600"
+          height="400"
+      /></a>
+    </div>
+    <div class="gallery">
+      <a
+        target="_blank"
+        href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/260/original/EST_WEBSITE_Case-Study_Rare-Beauty-4.jpg?1675748043"
+      >
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/260/original/EST_WEBSITE_Case-Study_Rare-Beauty-4.jpg?1675748043"
+          alt="Lipstick"
+          width="600"
+          height="400"
+        />
+      </a>
+    </div>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/269/original/tumblr_77968041b39f739423ea9c019256ed30_41f384cc_540.png?1675748360"
+      alt="highlight"
+      width="410"
+      style="float: left; border-radius: 70px"
+    />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/611/original/selena-gomez-rare-beauty-2ae91b19221f41eba5ba87159838d21e.jpg?1675920376"
+      alt="concealer"
+      width="410"
+      style="float: right; border-radius: 70px"
+    />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/616/original/Rare-Beauty-makeup.jpg?1675922186"
+      alt="eyeshadow"
+      width="580"
+      style="text-align: center; padding: 5px; margin: 5px"
+    />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h6 id="rare-impact-fund">Rare Impact Fund</h6>
+    <p class="fund">
+      The Rare Impact Fund is part of Rare Beauty’s commitment to give people
+      access to the resources they need to support their mental health. Rare
+      Beauty donates 1% of all sales to the Rare Impact Fund and raises
+      additional funds with philanthropic foundations, corporate partners, and
+      individuals in our community to increase access to mental health services
+      in educational settings.
+    </p>
+    <hr />
+    <h7>The FAQS:</h7>
+    <br />
+    <br />
+    <br />
+    <p class="facts">HOW IS THE RARE IMPACT FUND STRUCTURED?</p>
+    <p class="answers">
+      The Rare Impact Fund is a fiscally sponsored project of the Hopewell Fund,
+      a 501(c)(3) public charity.
+    </p>
+    <br /><br />
+    <p class="facts">DECIDES WHERE THE FUNDS WILL BE ALLOCATED?</p>
+    <p class="answers">
+      Grantmaking is directed by the Rare Impact Fund’s Advisory Board and will
+      be in alignment with our mission to expand mental health services in
+      educational settings, with a focus on underserved communities.
+    </p>
+    <br /><br />
+    <p class="facts">
+      WHAT PERCENTAGE OF RARE IMPACT FUND DONATIONS WILL GO TO GRANTEES?
+    </p>
+    <p class="answers">
+      100% of public donations are directed to our grantees and strategic
+      initiatives.
+    </p>
+    <br /><br />
+    <p class="facts">
+      CAN I CONTACT FOR MORE INFORMATION ON THE RARE IMPACT FUND?
+    </p>
+    <p class="answers">
+      You can contact us via email at impact@rarebeauty.com.
+    </p>
+    <br /><br />
+    <form action="https://secure.donationpay.org/rareimpact/">
+      <button class="donate" type="submit">Donate Now</button>
+    </form>
+    <br />
+    <form id="subscribeForm">
+      <div class="container" style="background-color: rgb(253, 246, 240)">
+        <input type="text" placeholder="Name" name="name" required />
+        <input type="text" placeholder="Email address" name="mail" required />
+        <label>
+          <input type="checkbox" checked="checked" name="subscribe" /> Daily
+          Newsletter
+        </label>
+      </div>
+      <div class="newsletter">
+        <input type="submit" value="Subscribe" />
+      </div>
+    </form>
+    <p class="footnote">
+      This page was built by
+      <a href="https://www.linkedin.com/in/jean-silver-a25b2114a/">
+        Jean Silver
+      </a>
+    </p>
+    <p class="rights">© 2023 Rare Beauty all rights reserved</p>
+    <div style="text-align: center">
+      <a
+        href="https://www.facebook.com/Rare-Beauty-102403614660064/?modal=admin_todo_tour"
+        class="fa fa-facebook"
+      ></a>
+      <a
+        href="https://www.instagram.com/rarebeauty/"
+        class="fa fa-instagram"
+      ></a>
+      <a href="https://twitter.com/rarebeauty" class="fa fa-twitter"></a>
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+      }
+      function subscribing(e) {
+        e.preventDefault();
+        alert("Thank you " + name + "for subscribing to Rare Beauty!");
+      }
+      let subscribeButton = document.querySelector("#subscribeForm");
+      subscribeButton.addEventListener("submit", subscribing);
+    </script>
+  </body>
+</html>
